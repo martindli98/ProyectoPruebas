@@ -5,7 +5,6 @@ include_once './Vista/Estructura/header.php';
 <div class="main-container w-100 p-4 d-flex justify-content-center" style="background: linear-gradient(#699676, white)">
     <div class="container border rounded shadow-lg p-4 bg-white" style="max-width: 1200px;">
         
-        <!-- Encabezado de Presentación -->
         <div class="text-center mb-4">
             <h5 class="fw-bold text-uppercase" style="font-size: 23px">Investigación de Librerías</h5>
             <h6 class="text-muted" style="font-size: 20px">Medoo - Laminas/Hydrator</h6>
