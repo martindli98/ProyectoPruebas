@@ -21,15 +21,16 @@ $baseURL = $protocolo . $host . $rutaProyecto;
     <link rel="stylesheet" href="<?php echo $baseURL . "/node_modules/bootstrap/dist/css/init.css"; ?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: 'Roboto'" class="bg-white">
-<header class="bg-white text-center shadow mb-4">
+<body style="font-family: 'Roboto' font-size: 20px"" class="bg-white">
+<header class="bg-white text-center shadow p-3">
     <div class="container-fluid" >
         <div class="row align-items-center justify-content-around">
             <div class="col-10">
                 <nav>
                     <ul class="nav justify-content-around list-unstyled">
-                        <li class="nav-item"><a href="<?php echo $baseURL; ?>/TP1" class="nav-link">MeDoo</a></li>
-                        <li class="nav-item"><a href="<?php echo $baseURL; ?>/TP2" class="nav-link">Hydrate</a></li>
+                        <li class="nav-item"><a href="./index.php" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="./medoo.php" class="nav-link">MeDoo</a></li>
+                        <li class="nav-item"><a href="./hydrate.php" class="nav-link">Hydrate</a></li>
                         <li class="nav-item"><a href="<?php echo $baseURL; ?>/TP3" class="nav-link">Implementación</a></li>
                     </ul>
                 </nav>

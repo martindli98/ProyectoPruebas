@@ -2,93 +2,89 @@
 include_once 'configuracion.php';
 include_once './Vista/Estructura/header.php';
 ?>
-<div class="main-container w-100 p-2 d-flex justify-content-center">
-<div class="ms-3 me-3 border border-2 rounded p-4 pt-3 d-flex flex-column align-items-center w-100">
-    
-    <!-- Encabezado de Presentación -->
-    <div class="w-100 p-2 pb-0 text-center">
-        <h5>INVESTIGACI&Oacute;N DE LIBRER&Iacute;AS</h5>
-        <h6 class="text-success">MeDoo - Laminas/Hydrator</h6>
-        <hr class="border-success" style="width: auto; border: 1px dotted black;">
-    </div>
+<div class="main-container w-100 p-4 d-flex justify-content-center" style="background: linear-gradient(#699676, white)">
+    <div class="container border rounded shadow-lg p-4 bg-white" style="max-width: 1200px;">
+        
+        <!-- Encabezado de Presentación -->
+        <div class="text-center mb-4">
+            <h5 class="fw-bold text-uppercase" style="font-size: 23px">Investigación de Librerías</h5>
+            <h6 class="text-muted" style="font-size: 20px">Medoo - Laminas/Hydrator</h6>
+            <hr class="border-secondary w-25 mx-auto">
+        </div>
 
-    <!-- Sección de Tarjetas de Librerías -->
-    <div class="d-flex w-100 justify-content-around">
-        <div class="w-50 m-3">
-            <div class="card d-flex flex-column align-items-center p-3" style="height: 28em;">
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="Vista/assets/img/medoo-logo.png" class="card-img-top" alt="Medoo Logo" style="width: 80px; height: 80px;">
-                        <h5 class="card-title ps-2 pt-3">medoo/medoo</h5>
+        <!-- Sección de Tarjetas de Librerías -->
+        <div class="row justify-content-center">
+            <!-- Tarjeta Medoo -->
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="card text-center border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <img src="Vista/assets/img/medoo-logo.png" class="mb-3" alt="Medoo Logo" style="width: 150px; height: 150px;">
+                        <h5 class="card-title fw-bold">Medoo/Medoo</h5>
+                        <p class="card-text text-muted" style="font-size: 17px">
+                            Medoo es una micro-ORM para PHP que simplifica las interacciones con bases de datos, 
+                            permitiendo consultas más eficientes y reduciendo la complejidad de trabajar con SQL.
+                        </p>
+                        <ul class="text-start list-unstyled">
+                            <li>✔ Manejo fácil de SQL</li>
+                            <li>✔ Soporte para varias bases de datos</li>
+                            <li>✔ Perfecto para proyectos pequeños</li>
+                        </ul>
                     </div>
-                    <p class="card-text mb-3 p-0 fs-6">
-                        Medoo es una micro-ORM (Object Relational Mapper) para PHP que simplifica las interacciones con bases de datos 
-                        mediante una capa de abstracción, permitiendo realizar consultas de manera más eficiente y reduciendo la complejidad 
-                        de trabajar directamente con SQL
-                    </p>
-                    <ul class="fs-6 text-start">
-                        <li>Facilita el manejo de datos con SQL simple</li>
-                        <li>Compatible con múltiples bases de datos</li>
-                        <li>Ideal para proyectos pequeños y medianos</li>
-                    </ul>
+                    <a href="#seccionMedoo" class="btn btn-outline-success w-100">Ver Documentación</a>
                 </div>
-                <a href="#seccionMedoo" class="btn btn-success fs-6 mb-3 w-50">Ver Documentaci&oacute;n</a>
+            </div>
+
+            <!-- Tarjeta Hydrator -->
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="card text-center border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <img src="Vista/assets/img/hydrator-logo.png" class="mb-3" alt="Hydrator Logo" style="width: 130px; height: 150px;">
+                        <h5 class="card-title fw-bold">Laminas/Hydrator</h5>
+                        <p class="card-text text-muted" style="font-size: 17px">
+                            Laminas/Hydrator es parte del ecosistema Laminas, enfocado en transformar datos entre 
+                            estructuras de objetos y arrays o bases de datos.
+                        </p>
+                        <ul class="text-start list-unstyled">
+                            <li>✔ Intercambio de datos sencillo</li>
+                            <li>✔ Modular y extensible</li>
+                            <li>✔ Ideal para aplicaciones grandes</li>
+                        </ul>
+                    </div>
+                    <a href="#seccionHydrator" class="btn btn-outline-success w-100">Ver Documentación</a>
+                </div>
             </div>
         </div>
 
-        <div class="w-50 m-3">
-            <div class="card d-flex flex-column align-items-center p-3" style="height: 28em;">
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="Vista/assets/img/hydrator-logo.png" class="card-img-top" alt="Hydrator Logo" style="width: 60px; height: 80px;">
-                        <h5 class="card-title ps-2 pt-3">Laminas/Hydrator</h5>
-                    </div>
-                    <p class="card-text mb-3 p-0 fs-6">
-                        Laminas/Hydrator es parte del ecosistema Laminas, un framework para aplicaciones web en PHP. Hydrator se enfoca en transformar 
-                        (hidratar) datos entre distintos tipos de estructuras, principalmente entre objetos y arrays o bases de datos.
-                    </p>
-                    <ul class="fs-6 text-start">
-                        <li>Facilita el intercambio de datos entre diferentes formatos</li>
-                        <li>Es extensible y modular</li>
-                        <li>Ideal para sistemas grandes y complejos</li>
-                    </ul>
-                </div>
-                <a href="#seccionHydrator" class="btn btn-success fs-6 mb-3 w-50">Ver Documentaci&oacute;n</a>
-            </div>
+        <!-- Sección Extensiva de Detalles -->
+        <div id="seccionMedoo" class="mt-5 p-4 bg-light rounded shadow-sm">
+            <h5 class="text-center fw-bold">Detalles de Medoo</h5>
+            <p class="text-muted">
+                Medoo ofrece una capa de abstracción que simplifica la escritura de SQL, proporcionando métodos fáciles para interactuar con diferentes bases de datos.
+            </p>
+            <h6 class="fw-bold">Características principales:</h6>
+            <ul>
+                <li>Soporte para múltiples bases de datos: MySQL, MariaDB, PostgreSQL, SQLite, y más</li>
+                <li>Consultas SQL simplificadas con arrays asociativos</li>
+                <li>Transacciones automáticas y control de errores</li>
+                <li>Compatibilidad con JSON y otros formatos de datos</li>
+            </ul>
+        </div>
+
+        <div id="seccionHydrator" class="mt-5 p-4 bg-light rounded shadow-sm">
+            <h5 class="text-center fw-bold">Detalles de Laminas/Hydrator</h5>
+            <p class="text-muted">
+                Laminas/Hydrator permite transformar datos entre diferentes estructuras, facilitando el desarrollo de aplicaciones complejas.
+            </p>
+            <h6 class="fw-bold">Características principales:</h6>
+            <ul>
+                <li>Transformación automática de datos entre estructuras heterogéneas</li>
+                <li>Totalmente extensible mediante estrategias personalizadas</li>
+                <li>Permite deshidratar (convertir objetos en arrays) y viceversa</li>
+            </ul>
         </div>
     </div>
-
-    <!-- Sección Extensiva de Detalles -->
-    <div id="seccionMedoo" class="w-100 mt-5">
-        <h5 class="text-center">Detalles de Medoo</h5>
-        <p class="fs-6">
-            Medoo es una de las micro-ORM más ligeras que existen para PHP. Su objetivo principal es simplificar las interacciones con bases de datos,
-            especialmente para desarrolladores que no necesitan la sobrecarga que puede traer un ORM completo.
-        </p>
-        <h6>Características principales:</h6>
-        <ul class="fs-6">
-            <li>Soporte para múltiples bases de datos: MySQL, MariaDB, PostgreSQL, SQLite, y más</li>
-            <li>Consultas SQL simplificadas con arrays asociativos</li>
-            <li>Transacciones automáticas y control de errores</li>
-            <li>Compatibilidad con JSON y otros formatos de datos</li>
-        </ul>
-    </div>
-
-    <div id="seccionHydrator" class="w-100 mt-5">
-        <h5 class="text-center">Detalles de Laminas/Hydrator</h5>
-        <p class="fs-6">
-            Laminas/Hydrator es un componente esencial dentro del ecosistema Laminas, diseñado para manejar la transformación de datos entre objetos y 
-            formatos planos como arrays o bases de datos. Esta herramienta es clave cuando trabajas con aplicaciones empresariales que requieren una gestión
-            compleja de datos.
-        </p>
-        <h6>Características principales:</h6>
-        <ul class="fs-6">
-            <li>Transforma datos entre estructuras heterogéneas de manera automática</li>
-            <li>Es completamente extensible mediante custom strategies</li>
-            <li>Permite deshidratar (convertir objetos en arrays) y viceversa</li>
-        </ul>
-    </div>
-
 </div>
 
 <?php
+include_once './Vista/Estructura/footer.php';
+?>
