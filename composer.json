@@ -1,19 +1,12 @@
 {
-    "name": "brisa/proyecto-pruebas",
-    "description": "Proyecto MVC utilizando Medoo y Mustache",
-    "type": "library",
-    "require-dev": {
-        "catfan/medoo": "^2.1",
-        "mustache/mustache": "^2.14"
+    "require": {
+        "laminas/laminas-hydrator": "^4.15",
+        "catfan/medoo": "^2.1"
     },
-    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Brisa\\ProyectoPruebas\\": "src/"
+            "model\\": "hydrator/model/",
+            "controller\\": "hydrator/controller/"
         }
-    },
-    "minimum-stability": "stable",
-    "require": {
-        "laminas/laminas-hydrator": "^4.15"
     }
 }

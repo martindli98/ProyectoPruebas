@@ -4,9 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit44e7956feb14b96def9f204f3d077887
+class ComposerStaticInit04ed5511f9c0e2fedc3c9bf006ae0fba
 {
     public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'model\\' => 6,
+        ),
+        'c' => 
+        array (
+            'controller\\' => 11,
+        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
@@ -20,13 +28,17 @@ class ComposerStaticInit44e7956feb14b96def9f204f3d077887
             'Laminas\\Stdlib\\' => 15,
             'Laminas\\Hydrator\\' => 17,
         ),
-        'B' => 
-        array (
-            'Brisa\\ProyectoPruebas\\' => 22,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/hydrator/model',
+        ),
+        'controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/hydrator/controller',
+        ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
@@ -43,20 +55,6 @@ class ComposerStaticInit44e7956feb14b96def9f204f3d077887
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-hydrator/src',
         ),
-        'Brisa\\ProyectoPruebas\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'M' => 
-        array (
-            'Mustache' => 
-            array (
-                0 => __DIR__ . '/..' . '/mustache/mustache/src',
-            ),
-        ),
     );
 
     public static $classMap = array (
@@ -66,10 +64,9 @@ class ComposerStaticInit44e7956feb14b96def9f204f3d077887
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit44e7956feb14b96def9f204f3d077887::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit44e7956feb14b96def9f204f3d077887::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit44e7956feb14b96def9f204f3d077887::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit44e7956feb14b96def9f204f3d077887::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit04ed5511f9c0e2fedc3c9bf006ae0fba::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit04ed5511f9c0e2fedc3c9bf006ae0fba::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit04ed5511f9c0e2fedc3c9bf006ae0fba::$classMap;
 
         }, null, ClassLoader::class);
     }

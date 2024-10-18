@@ -1,10 +1,8 @@
 <?php
-session_start();
 
-function darDatosSubmitted1()
+function darDatosSubmitted()
 {
     $datos = [];
-    //piso el array de datos con los datos que vienen por POST para darles prioridad
     foreach ($_GET as $key => $value) {
         $datos[$key] = $value;
     }
@@ -23,9 +21,9 @@ function verEstructura($e)
 
 spl_autoload_register(function ($class_name) {
     $directorys = array(
-        $_SESSION['ROOT'] . 'Model/',
-        $_SESSION['ROOT'] . 'Model/Connector/',
-        $_SESSION['ROOT'] . 'Control/',
+        $_SESSION['ROOT'] . 'model/',
+        $_SESSION['ROOT'] . 'model/connector/',
+        $_SESSION['ROOT'] . 'control/',
     );
 
     foreach ($directorys as $directory) {

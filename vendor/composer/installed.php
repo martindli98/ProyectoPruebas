@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'brisa/proyecto-pruebas',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'name' => '__root__',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'e71072f73964650d963d59404f905f592d20b3b8',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'brisa/proyecto-pruebas' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+        '__root__' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'e71072f73964650d963d59404f905f592d20b3b8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -26,7 +26,7 @@
             'type' => 'framework',
             'install_path' => __DIR__ . '/../catfan/medoo',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'laminas/laminas-hydrator' => array(
             'pretty_version' => '4.15.0',
@@ -45,15 +45,6 @@
             'install_path' => __DIR__ . '/../laminas/laminas-stdlib',
             'aliases' => array(),
             'dev_requirement' => false,
-        ),
-        'mustache/mustache' => array(
-            'pretty_version' => 'v2.14.2',
-            'version' => '2.14.2.0',
-            'reference' => 'e62b7c3849d22ec55f3ec425507bf7968193a6cb',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../mustache/mustache',
-            'aliases' => array(),
-            'dev_requirement' => true,
         ),
         'webmozart/assert' => array(
             'pretty_version' => '1.11.0',

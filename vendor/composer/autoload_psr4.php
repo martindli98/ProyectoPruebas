@@ -6,9 +6,10 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'model\\' => array($baseDir . '/hydrator/model'),
+    'controller\\' => array($baseDir . '/hydrator/controller'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'Medoo\\' => array($vendorDir . '/catfan/medoo/src'),
     'Laminas\\Stdlib\\' => array($vendorDir . '/laminas/laminas-stdlib/src'),
     'Laminas\\Hydrator\\' => array($vendorDir . '/laminas/laminas-hydrator/src'),
-    'Brisa\\ProyectoPruebas\\' => array($baseDir . '/src'),
 );
